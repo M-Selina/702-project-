@@ -1,7 +1,7 @@
 BINF702 Project
 Date: April 15, 2024
 
-Overview
+**Overview**
 This project analyzes the SRBCT dataset, which consists of gene expression data from 83 patients across four different cancer types:
 
 Ewing sarcoma (EWS) (29 samples)
@@ -10,12 +10,8 @@ Neuroblastoma (NB) (18 samples)
 Rhabdomyosarcoma (RMS) (25 samples)
 The dataset contains 2,308 gene expression measurements per patient. The analysis includes exploratory data analysis, hypothesis testing, clustering, classification, and principal component analysis (PCA).
 
-Requirements
+**Requirements**
 To run this project, you need the following dependencies in R:
-
-r
-Copy
-Edit
 install.packages(c("plsgenomics", "outliers", "rpart", "rpart.plot"))
 Data Description
 The project uses the SRBCT dataset from the plsgenomics package. Key variables include:
@@ -23,7 +19,8 @@ The project uses the SRBCT dataset from the plsgenomics package. Key variables i
 SRBCT$X: Gene expression data (83 samples × 2,308 genes).
 SRBCT$Y: Cancer type labels (1 = EWS, 2 = BL, 3 = NB, 4 = RMS).
 SRBCT$gene.names: Gene identifiers and descriptions.
-Analysis Steps
+
+**Analysis Steps**
 1. Data Preprocessing
 Checked for missing values and duplicate gene identifiers.
 Created unique gene IDs.
@@ -44,10 +41,11 @@ First 10 principal components explain 81% of variance.
 First 2 principal components explain 63% of variance.
 Bootstrap confidence intervals estimated for eigenvalues.
 Biplot visualization of PCA results.
-How to Run the Code
+
+**How to Run the Code**
 Open RStudio or an R environment.
 
-Load the required libraries:
+**Load the required libraries:**
 
 library(plsgenomics)
 library(outliers)
@@ -55,8 +53,7 @@ library(rpart)
 library(rpart.plot)
 Run the script section by section, following the analysis flow.
 
-Results & Insights
-
+**Results & Insights**
 EWS and RMS samples showed lower normality and more outliers, suggesting variability in gene expression.
 BL samples had the most normally distributed gene expressions.
 PCA analysis identified key genes that differentiate BL from other cancer types.
