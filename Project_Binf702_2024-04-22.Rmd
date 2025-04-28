@@ -5,7 +5,7 @@ output:
   pdf_document:
     latex_engine: xelatex
 ---
-```{r}
+{r}
 library(plsgenomics)
 data(SRBCT)      # 83 patients/samples and 2308 
 #genessum
@@ -51,7 +51,7 @@ train_khan_df <- khan_df[training,]
 test_khan_df <- khan_df[testing,]
 
 
-```
+
 
 DATA ASSESSMENT – HYPOTHESIS TESTING:
 
